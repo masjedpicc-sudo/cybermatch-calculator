@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 
 const PRICE_DATA = {
@@ -356,6 +357,12 @@ export default function CyberMatch() {
           <div style={s.brand}><div style={s.dot} /><span style={s.brandName}>CyberMatch</span></div>
           <h1 style={s.title}>Fair Price Checker</h1>
           <p style={s.subtitle}>See real market rates for cybersecurity.<br />No email required.</p>
+          {step === 0 && (
+            <div style={{ background: "#161b22", border: "1px solid #21262d", borderRadius: 12, padding: "16px 18px", marginBottom: 20 }}>
+              <p style={{ color: "#4ade80", fontSize: 11, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", margin: "0 0 6px" }}>Our Vendor Quality Commitment</p>
+              <p style={{ color: "#8b949e", fontSize: 13, lineHeight: 1.6, margin: 0 }}>We carefully evaluate every provider before introducing them to businesses. We prioritize responsiveness, professionalism, and relevant cybersecurity experience.<br /><br />Our goal is simple: connect businesses with providers we would feel comfortable recommending ourselves.</p>
+            </div>
+          )}
           {step < totalSteps && renderStep()}
           {step === totalSteps && renderResults()}
           {step === 5 && renderForm()}
