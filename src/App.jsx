@@ -1,5 +1,4 @@
-
-import { useState } from "react";
+ort { useState } from "react";
 
 const PRICE_DATA = {
   Healthcare: {
@@ -282,7 +281,7 @@ export default function CyberMatch() {
             <div key={t} style={s.trustItem}><span style={{ color: "#4ade80", fontWeight: 700 }}>✓</span><span>{t}</span></div>
           ))}
         </div>
-        <button style={s.primaryBtn} onClick={() => setStep(5)}>Get My Free Quotes →</button>
+        <button style={s.primaryBtn} onClick={() => window.open("https://tally.so/r/kdzY6J", "_blank")}>Get My Free Quotes →</button>
         <button style={s.resetBtn} onClick={handleReset}>Start Over</button>
       </div>
     );
