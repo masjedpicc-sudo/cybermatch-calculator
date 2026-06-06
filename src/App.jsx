@@ -1,4 +1,4 @@
-ort { useState } from "react";
+import { useState } from "react";
 
 const PRICE_DATA = {
   Healthcare: {
